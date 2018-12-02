@@ -4,7 +4,7 @@
         <v-toolbar-title>Application</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-btn flat to="/signin">SIGN IN</v-btn>
-        <v-btn color="brown lighten-3" to="/signup">SIGN UP</v-btn>
+        <v-btn flat to="/signup">SIGN UP</v-btn>
     </v-toolbar>
 </template>
 <script>

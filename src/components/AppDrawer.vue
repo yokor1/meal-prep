@@ -1,14 +1,19 @@
 <template>
-    <v-navigation-drawer app clipped :value="drawer" stateless color="brown darken-4">
+    <v-navigation-drawer app clipped :value="drawer" stateless>
         <v-list dense>
-            <v-list-tile v-for="listItem of listItems">
-                <v-list-tile-action>
-                    <v-icon>{{listItem.icon}}</v-icon>
-                </v-list-tile-action>
-                <v-list-tile-content>
-                    <v-list-tile-title>{{listItem.title}}</v-list-tile-title>
-                </v-list-tile-content>
-            </v-list-tile>
+
+                <v-list-tile v-for="listItem of listItems" :to="listItem.link">
+
+                    <v-list-tile-action>
+                        <v-icon >{{listItem.icon}}</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                        <v-list-tile-title>{{listItem.title}}</v-list-tile-title>
+                    </v-list-tile-content>
+
+                </v-list-tile>
+
+
         </v-list>
     </v-navigation-drawer>
 
@@ -23,12 +28,12 @@ export default {
             {
                 title: 'Home',
                 icon: 'home',
-                link: 'link'
+                link: '/'
             },
             {
                 title: 'About',
                 icon: 'info',
-                link: 'link'
+                link: 'about'
             }
         ]
     })

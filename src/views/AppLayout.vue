@@ -26,7 +26,7 @@ export default {
         AppDrawer,
     },
     data: () => ({
-        drawer: null,
+        drawer: true,
     }),
 };
 </script>

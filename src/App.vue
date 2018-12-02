@@ -10,7 +10,5 @@ export default {
     components: {
         AppLayout
     },
-    props: {},
-    data: () => ({})
 };
 </script>

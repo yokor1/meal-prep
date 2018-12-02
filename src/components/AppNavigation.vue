@@ -1,5 +1,5 @@
 <template>
-    <v-toolbar app color="brown darken-4" dark fixed>
+    <v-toolbar app color="brown darken-4" dark clipped-left>
         <v-toolbar-side-icon @click.stop="$emit('toggleDrawerEvent')"></v-toolbar-side-icon>
         <v-toolbar-title>Application</v-toolbar-title>
         <v-btn flat>Menu</v-btn>

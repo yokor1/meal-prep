@@ -5,10 +5,10 @@
         <AppNavigation v-on:toggleDrawerEvent="drawer = !drawer"></AppNavigation>
 
         <v-content>
-            <v-container fill-height fluid>
-                <v-layout align-center justify-center>
-
-                </v-layout>
+            <v-container fluid fill-height class="pa-0">
+                <transition name="slide-fade">
+                    <router-view></router-view>
+                </transition>
             </v-container>
         </v-content>
         <v-footer app color="brown darken-4" dark>
@@ -23,10 +23,13 @@ import AppDrawer from '../components/AppDrawer';
 export default {
     components: {
         AppNavigation,
-        AppDrawer,
+        AppDrawer
     },
     data: () => ({
-        drawer: true,
-    }),
+        drawer: true
+    })
 };
 </script>
+<style scoped>
+
+</style>
